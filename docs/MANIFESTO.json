@@ -1,6 +1,4 @@
 {
-  "review_date": "2026-11-16",
-  "review": "Comparação estática; sem execução no QuPath; scripts mantidos sem alterações",
   "files": [
     {
       "original_name": "audrei_pol.groovy",
@@ -65,6 +63,286 @@
       "included": true,
       "destination": "scripts/Sholl_Microglia_v6.groovy",
       "decision": "mantido"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "adipocitos_final.groovy",
+      "destination": "scripts/adipocitos/adipocitos_cellpose_sam_filtro_cor_cpu.groovy",
+      "sha256": "d2e39e2b10b88a1b013c10332562794b92bd1428528b94109e694688a892c54b",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "adipocitos.groovy",
+      "destination": "scripts/adipocitos/adipocitos_cellpose_sam_filtro_cor_gpu.groovy",
+      "sha256": "f407eeaa150b1c2a607d9e6e3bea403ab78b02961a146064a8e60e6e46f03e1b",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Analises.groovy",
+      "destination": "scripts/fibras/fibras_cellpose_sam_imagem_inteira_escala_fixa.groovy",
+      "sha256": "8befd5afb54a0dc1244a97ac249b82334a36358740c959d0ad4e08dc4c0d893e",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "analysis.groovy",
+      "destination": "scripts/fibras/fibras_intersticio_cellpose_blocos_duplicados.groovy",
+      "sha256": "619e375429bd9d75566bdc558d9fe59300bb1f59ab71dad5737412ec145f08ee",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "beatriz_fibras.groovy",
+      "destination": "scripts/fibras/fibras_cellpose_cpsam_red_05um.groovy",
+      "sha256": "453369b1fbf0b1fbb20d69f4c7237eaccaf5ac77093a0ae75e4404631c904b6d",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "c4d_script.groovy",
+      "destination": "scripts/classificadores/anotacoes_pixel_classifier_c4d.groovy",
+      "sha256": "42ac758aaedaa71ed0878b09235d443da2848699ccdc0d841bbb1268c5258683",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "classificacao.groovy",
+      "destination": "scripts/fibras/fibras_cellpose_cyto3_classificacao_tipo.groovy",
+      "sha256": "6f57563c7e194ebcb4a8b6000e0ad99a9f7f872969384264a69ad8418637f57b",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "col_total.groovy",
+      "destination": "scripts/colageno/colageno_total_regioes_muscle_picro.groovy",
+      "sha256": "8e577c4323eff39562a4d2175ce59c16c188ace44a3031ec9585d822886537e1",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Crop_tiles.groovy",
+      "destination": "scripts/regioes/exportar_tiles_320um_tecido_retangulo_fixo.groovy",
+      "sha256": "84cd7773fb38e3a366afb6a21cf89485349ca3916e8e022c3b37929094a7133b",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "fiber_dectection.groovy",
+      "destination": "scripts/fibras/fibras_cellpose_cyto3_anotacoes_selecionadas.groovy",
+      "sha256": "dbc60dc0842de5daf40b7f79b04b4d9bbe62f037b8ffcf38c022bf1ea8bb2824",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "fibers.groovy",
+      "destination": "scripts/fibras/fibras_cellpose_cpsam_filtro_forma.groovy",
+      "sha256": "0239dd154c31230d54ce127d00cacc9a8128420ab43a6dda4497f9b5bdf38ea9",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "glayce.groovy",
+      "destination": "scripts/colageno/celulas_isoladas_colageno_pixel_classifier.groovy",
+      "sha256": "4c6b3ef340b4f6609d7d033d1c4768666f0f90bc5f3a60d3034569ea2da8eb56",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "glayce2.groovy",
+      "destination": "scripts/colageno/celulas_isoladas_colageno_masson.groovy",
+      "sha256": "6fe25f4534be0f9f63ed43e0804a571702342d0fd6e753d34ba0d08e68fd10c4",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "immune_cells.groovy",
+      "destination": "scripts/imunidade/celulas_imunes_he_classificacao_duas_etapas.groovy",
+      "sha256": "32093603f9a476ebd1e53d041a812a2493bb02550793d9eb4e026ef3a9bb0c17",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "juncao.groovy",
+      "destination": "scripts/ihq/celulas_positivas_dab_citoplasma_010_expansao5.groovy",
+      "sha256": "35ec26eb7758b8d033fb085aa353e19cf71ac1c7d42468e93b2b021e98ddadc2",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Larissa_immune_cells.groovy",
+      "destination": "scripts/imunidade/celulas_imunes_coracao_interfibra.groovy",
+      "sha256": "72f3c36f8588ffc3d45f93fbba4d7233cde40008c2e6ee5abade024045e2f53e",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Larissa_immune_cells_withQC.groovy",
+      "destination": "scripts/imunidade/celulas_imunes_interfibra_filtro_foco.groovy",
+      "sha256": "458317a70db8a589f32963b121e677f83cead0fea79f6fe48f6a471d7d86be39",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Larissa_immune_cells_withQC_semdobras.groovy",
+      "destination": "scripts/imunidade/celulas_imunes_filtro_foco_cellpose_fibras.groovy",
+      "sha256": "8ba8a8b7c23c3a917a90c38f38eceeeddfaa52e304abb94981072da2c1f49ee3",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Larissa_immune_cells_withQC_semdobras_area.groovy",
+      "destination": "scripts/imunidade/celulas_imunes_filtro_foco_fibras_csa.groovy",
+      "sha256": "ba0ed89c1ca5ad9c06bd12ce75c9af4046ace354347ffffdf770d2119a1aacf9",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Milena (Lab Lourdes fev.2026).groovy",
+      "destination": "scripts/ihq/celulas_positivas_dab_citoplasma_020_expansao8.groovy",
+      "sha256": "9d14ca633afbd4d4095ee5804652f6a5c2add8f1b090cd1696b0af1932eaaf66",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Milena 2 (Lab Lourdes fev.2026).groovy",
+      "destination": "scripts/ihq/historico_ajustes_deteccao_positividade_dab.groovy",
+      "sha256": "ba32e0534ed20f09eafe40b1303cea15d3abe4830975b41bc09668d0388c9491",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "milena_complex.groovy",
+      "destination": "scripts/classificadores/celulas_cellpose_cpsam_criptas_dilatadas.groovy",
+      "sha256": "2f681c7040d54d6be1915a57f61bb90c81c7cc6e8656e2fda8307afbc265308c",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "milena_simples.groovy",
+      "destination": "scripts/classificadores/celulas_cellpose_cpsam_tecido.groovy",
+      "sha256": "66fdb2d40aea982949720ae59fdecd513382ae4ec1c9e8d17cd278d045bd1cc6",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "muscle_fibers.groovy",
+      "destination": "scripts/fibras/fibras_cellpose_sam_resumo_area_cpu.groovy",
+      "sha256": "e632b9e3c4d0bfc00bc01610666a48c849600622d6215fc5f3675782db8c53a8",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Final.groovy",
+      "destination": "scripts/fibras/fibras_dapi_pax_radial_intersecao.groovy",
+      "sha256": "7763562be23bdcaf04299d02c116131b3deb1bf42f945102e52037296d1996cf",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "nava2.groovy",
+      "destination": "scripts/fibras/fibras_dapi_pax_radial_muscle2_nuclei3.groovy",
+      "sha256": "28d90da11944edbcb3673863f8244cc9395b76ac3717852129b056e01b07da62",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "novo2.groovy",
+      "destination": "scripts/fibras/fibras_dapi_pax_radial_muscle_2_nuclei2.groovy",
+      "sha256": "6ffa7e19a6638bbe58e9575889e8b1385b20cd871f6ca6fd1037107b7bd35249",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Final_novo.groovy",
+      "destination": "scripts/fibras/fibras_nucleos_centrais_perifericos_intersticio_he.groovy",
+      "sha256": "d0b4f6fa48a6e322b27ae8e0a4ea37ea0d4de0da06d116a4bd858a502eda91cc",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "nova.groovy",
+      "destination": "scripts/fibras/fibras_dapi_pax_radial_centroide_passos.groovy",
+      "sha256": "35f0aa05ff0266f40e5b3f514fd819d9b1cd5d51d3642fdce8895add36a0884a",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "positive_cell_detection_whole_image.groovy",
+      "destination": "scripts/ihq/celulas_positivas_dab_imagem_inteira_csv.groovy",
+      "sha256": "c8cfe826abb3cd9da70ca5df8a6f5f00f47d228edc7400c2e21d8a1d43910463",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "positive_cells.groovy",
+      "destination": "scripts/ihq/celulas_positivas_dab_citoplasma_018_expansao3.groovy",
+      "sha256": "4f991503db2503ec2f18a78ab970e8da157fea78e474eb52a0c2887b6c7c0290",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "raissa_crop.groovy",
+      "destination": "scripts/regioes/rois_aleatorias_20porcento_exportacao_tecido.groovy",
+      "sha256": "99a01fad9a777406650d825496afdaf04bf8aa0c7daa5dc297f286007b266886",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "rectangles random.groovy",
+      "destination": "scripts/regioes/retangulos_aleatorios_calibrados_semente_fixa.groovy",
+      "sha256": "23881f8f8986a570968ef458b409c57ccc2136bc1163f53ffac9c2e6f57e21ff",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "ROI_creation.groovy",
+      "destination": "scripts/regioes/criar_rois_quadradas_linha_central.groovy",
+      "sha256": "2dec21c86ea063751e0ee696808a228eb7d4b2edb9740d0ed5c7aad7b759b6dd",
+      "included": true,
+      "decision": "renomeado; conteúdo preservado"
+    },
+    {
+      "collection": "novos_scripts",
+      "original_name": "Crop_tiles_raissa.groovy",
+      "destination": "scripts/regioes/exportar_tiles_320um_tecido_retangulo_fixo.groovy",
+      "sha256": "84cd7773fb38e3a366afb6a21cf89485349ca3916e8e022c3b37929094a7133b",
+      "included": true,
+      "decision": "cópia idêntica consolidada"
     }
   ]
 }

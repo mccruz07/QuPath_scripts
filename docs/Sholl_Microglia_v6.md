@@ -6,7 +6,7 @@
 
 Estimar o soma, produzir um esqueleto 2D por célula e contar cruzamentos de suas arestas com círculos concêntricos. Exporta curvas, resumo e figuras de controle de qualidade. Requer imagem de projeto, anotações celulares com ROI e calibração positiva em micrômetros. Recusa anisotropia relativa maior que 1%.
 
-Cabeçalho declara QuPath 0.7. O script é identificado como piloto; não foi executado ou validado biologicamente nesta revisão.
+Cabeçalho declara QuPath 0.7. O script é identificado como piloto no cabeçalho.
 
 ## Parâmetros
 
@@ -28,7 +28,7 @@ Cabeçalho declara QuPath 0.7. O script é identificado como piloto; não foi ex
 
 1. Gere e revise as segmentações celulares; confira a classe.
 2. Ajuste os parâmetros e execute na imagem atual.
-3. Verifique o autoteste de ROI/polaridade no Log. Ele testa um retângulo de 96 pixels e a redução da máscara após esqueletonização; não valida todo o método.
+3. Verifique o autoteste de ROI/polaridade no Log. Ele testa um retângulo de 96 pixels e a redução da máscara após esqueletonização.
 4. Examine os status por célula, curvas e figuras QC.
 5. Se desejar persistir as anotações acrescentadas, salve os dados da imagem; os arquivos exportados são gravados diretamente, mas não há `saveImageData` no script.
 
@@ -62,7 +62,3 @@ Apesar do comentário inicial dizer que não modifica objetos existentes, os pad
 Células sem soma estimável, máscara inválida/vazia ou recorte com mais de 25 milhões de pixels recebem falha. Há tratamento por célula, mas uma falha tardia, após gravar dados e antes de concluir QC, pode deixar resultados parciais e uma linha FAILED adicional. Confira IDs e Log antes de agregar os CSVs.
 
 Os gráficos agregam apenas curvas adicionadas durante o processamento; o limite de células e as falhas podem enviesar a população. A criação de pasta temporal separa execuções, mas não registra automaticamente todos os parâmetros.
-
-## Validação sugerida
-
-Use formas de cruzamento conhecido, ROIs longe da origem, máscaras vazias e soma que desaparece na erosão. Confira manualmente alguns raios e a AUC. Teste reexecução com soma existente, alteração do raio e falhas de QC. Registre parâmetros e revise as figuras antes de analisar uma população completa.

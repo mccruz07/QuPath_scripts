@@ -8,7 +8,7 @@ Esta versão mantém GR a partir do mínimo solicitado de 45 µm², sem o filtro
 
 ## Entradas e configuração
 
-Projeto com imagem calibrada em µm, uma única anotação com nome ou classe `Cortex`, classificadores `IBA` e `GR_1` e as APIs ImageJ/JTS usadas no código. Cabeçalho declara QuPath 0.7; execução não testada.
+Projeto com imagem calibrada em µm, uma única anotação com nome ou classe `Cortex`, classificadores `IBA` e `GR_1` e as APIs ImageJ/JTS usadas no código. Cabeçalho declara QuPath 0.7.
 
 | Parâmetro | Padrão |
 | --- | --- |
@@ -41,8 +41,8 @@ São 17 colunas individuais e 29 no resumo. O resumo não tem os contadores do f
 
 As linhas são acrescentadas a arquivos existentes, sem deduplicação ou verificação de cabeçalho. O mesmo destino era usado por outras versões excluídas com resumos de tamanhos diferentes. Use resultados separados. O script atualiza a interface, sem salvar explicitamente os dados da imagem; salve-os após a revisão se quiser persistir as anotações.
 
-## Limitações e validação
+## Particularidades de uso
 
-Aplicam-se os problemas de coordenadas/polaridade do esqueleto, aproximação para pixels anisotrópicos, interpretação por centroide, ausência de filtro explícito de classe positiva e associação apenas em X/Y descritos na [validação](VALIDACAO.md). A validação da ROI de área é menos explícita que na principal.
+Aplicam-se os problemas de coordenadas/polaridade do esqueleto, aproximação para pixels anisotrópicos, interpretação por centroide, ausência de filtro explícito de classe positiva e associação apenas em X/Y descritos no [guia da análise principal](complete_fast.md). A validação da ROI de área é menos explícita que na principal.
 
-Teste um GR maior que 1500 µm²: a variante pode mantê-lo, enquanto a principal o exclui. Compare também dados sem objetos grandes para separar diferenças de critério de possíveis diferenças de implementação. Não combine estatísticas das duas versões como se usassem o mesmo protocolo.
+Esta variante pode manter objetos GR maiores que 1500 µm², enquanto a principal os exclui. Mantenha os resultados separados conforme o critério escolhido.

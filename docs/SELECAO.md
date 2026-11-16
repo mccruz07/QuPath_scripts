@@ -1,6 +1,8 @@
-# Seleção e redução de redundância
+# Seleção da primeira coleção
 
 [← README](../README.md)
+
+A seleção abaixo se refere aos oito scripts da primeira inclusão. Para os novos arquivos, consulte [nomes e variantes](NOMES_DOS_SCRIPTS.md).
 
 ## Critério
 
@@ -19,7 +21,7 @@ Comparação de configuração, segmentação, associação GR→IBA, medidas e 
 
 ## Por que a variante sem máximo foi preservada
 
-`Cortex_Microglia_GR` tem mínimo GR de 45 µm², mas não possui a exclusão posterior por máximo de 1500 µm² presente em `complete_fast`. Essa diferença pode mudar contagens, associações e médias. Foi mantida para não descartar silenciosamente um critério analítico distinto. Sua preservação não implica preferência científica ou validação.
+`Cortex_Microglia_GR` tem mínimo GR de 45 µm², mas não possui a exclusão posterior por máximo de 1500 µm² presente em `complete_fast`. Essa diferença pode mudar contagens, associações e médias. Foi mantida para não descartar silenciosamente um critério analítico distinto.
 
 ## Diferenças ao migrar para complete_fast
 

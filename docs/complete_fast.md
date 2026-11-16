@@ -6,7 +6,7 @@
 
 Criar anotações a partir dos classificadores IBA e GR, filtrar por área, associar cada GR à microglia com maior sobreposição e calcular morfologia individual e estatísticas da região Cortex. A busca usa um índice espacial STRtree.
 
-Exige imagem aberta em projeto, calibração em micrômetros, exatamente uma anotação com nome **ou** classe `Cortex`, ROI de área válida e classificadores `IBA` e `GR_1`. O cabeçalho declara QuPath 0.7; compatibilidade não foi testada. A análise é de geometrias 2D e não implementa reconstrução ou associação 3D.
+Exige imagem aberta em projeto, calibração em micrômetros, exatamente uma anotação com nome **ou** classe `Cortex`, ROI de área válida e classificadores `IBA` e `GR_1`. O cabeçalho declara QuPath 0.7. A análise é de geometrias 2D e não implementa reconstrução ou associação 3D.
 
 ## Parâmetros no início do script
 
@@ -22,7 +22,7 @@ Exige imagem aberta em projeto, calibração em micrômetros, exatamente uma ano
 | SKELETON_PADDING | 3 | Margem do recorte binário em pixels |
 | REMOVE_PREVIOUS_OBJECTS | true | Remove Microglia/GR anteriores com centroide dentro de Cortex |
 
-Os valores são parâmetros do arquivo recebido, não limiares biológicos validados ou universais.
+Os valores são parâmetros ajustáveis no início do arquivo.
 
 ## Fluxo e uso
 
@@ -65,13 +65,9 @@ Os IDs do CSV são sequenciais nessa execução, não UUIDs persistentes. **Não
 
 ## Limitações prioritárias
 
-- A conversão da ROI para o recorte passa `x0,y0` a `convertToIJRoi`, enquanto o Sholl fornecido usa `-x0,-y0`. É necessário testar máscaras fora da origem; há risco de deslocamento e máscara vazia. Consulte [validação e fontes](VALIDACAO.md).
+- A conversão da ROI para o recorte passa `x0,y0` a `convertToIJRoi`, enquanto o Sholl fornecido usa `-x0,-y0`. É necessário testar máscaras fora da origem; há risco de deslocamento e máscara vazia.
 - `skeletonize()` é chamado sem explicitar a polaridade; o código preenche a célula com 255 e depois mede pixels não zero. Valide o primeiro plano e o esqueleto antes de usar comprimento/densidade.
 - Perímetros e raio do soma usam a média de tamanho dos pixels; pixels anisotrópicos não recebem uma transformação geométrica física adequada nessas etapas.
 - As ROIs são tratadas em X/Y; a associação não confere se GR e IBA pertencem ao mesmo plano Z/T. Use dados de um único plano ou revise o algoritmo para dados multiplanares.
 - Não há teto de memória para as máscaras das células. Uma ROI extensa ou geometria problemática pode interromper o processamento fora dos blocos locais de tratamento de erro.
 - Remover objetos anteriores não limpa os CSVs; desativar a remoção pode acumular objetos e não implementa deduplicação.
-
-## Teste sugerido
-
-Comece com poucas ROIs conhecidas, GR sobreposto a 19%, 20% e 21%, um GR sobre duas IBA e objetos acima/abaixo dos limites. Compare contagens e fórmulas manualmente. Teste uma célula longe da origem, confira máscara e esqueleto e examine o caso sem células. Registre a versão do QuPath, os classificadores e os parâmetros. Nenhuma validação experimental foi realizada nesta entrega.

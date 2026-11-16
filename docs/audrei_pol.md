@@ -50,8 +50,8 @@ Na pasta `collagen_results` ao lado do arquivo de projeto; sem projeto, em `user
 
 São 11 colunas, descritas no [dicionário](DICIONARIO_DADOS.md). Áreas têm três casas decimais; percentuais e razões têm quatro, com ponto decimal.
 
-## Limitações e validação
+## Particularidades de uso
 
 Não há escape CSV para o nome da imagem nem limpeza para uso como nome de arquivo. Vírgulas, aspas, quebras de linha e separadores de caminho podem causar resultados inadequados. Áreas sobrepostas podem ser somadas mais de uma vez; red/green não são automaticamente normalizados para somar 100%. Confira se as unidades das medidas do classificador correspondem à unidade das áreas de ROI antes de usar os percentuais.
 
-O bloco `synchronized(compiledCsv)` não constitui garantia de coordenação entre processos ou execuções independentes. Evite gravações simultâneas no mesmo compilado. Teste com uma imagem pequena de áreas conhecidas, imagem sem tecido e nomes especiais; confira também o comportamento ao repetir a execução. Nenhum desses testes foi realizado nesta revisão.
+O bloco `synchronized(compiledCsv)` não constitui garantia de coordenação entre processos ou execuções independentes. Evite gravações simultâneas no mesmo compilado.

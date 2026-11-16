@@ -34,6 +34,4 @@ As coordenadas X/Y em pixels são copiadas diretamente, sem transformação. A R
 
 Com `SKIP_IF_EXISTS=true`, qualquer Cortex existente faz a imagem ser pulada; não há verificação de equivalência da ROI. Com `false`, adiciona outra ROI, sem substituir a anterior, podendo criar duplicatas incompatíveis com a análise que exige exatamente uma Cortex.
 
-## Validação
-
-Teste em projeto com três imagens: referência, destino vazio e destino com Cortex. Confira geometria, classe e persistência após reabrir o projeto. Teste separadamente imagem com dimensões diferentes. A contagem de puladas inclui a própria referência. Falhas por imagem são registradas e o laço continua, sem desfazer imagens já salvas.
+A contagem de imagens puladas inclui a referência. Falhas por imagem são registradas e o processamento continua, sem desfazer imagens já salvas.

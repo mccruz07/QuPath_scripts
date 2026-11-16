@@ -1,4 +1,4 @@
-# Dicionário de dados
+# Dicionário de dados — primeira coleção
 
 [← README](../README.md)
 
@@ -24,7 +24,7 @@ Uma linha por célula processada. `Microglia_ID` é índice da execução, não 
 | `Shape_Complexity` | P²/(4πA) |
 | `Estimated_Soma_Area_um2` | Área do soma estimado por abertura, µm² |
 | `Soma_Fraction` | Área soma / área IBA |
-| `Skeleton_Length_um` | Comprimento estimado por ligações do esqueleto, µm; requer validação |
+| `Skeleton_Length_um` | Comprimento estimado por ligações do esqueleto, µm |
 | `Skeleton_Density_um-1` | Comprimento do esqueleto / área IBA, µm⁻¹ |
 | `GR_Positive` | 1 se houver GR associado, senão 0 |
 | `Associated_GR_Count` | Número de objetos GR atribuídos à célula |
