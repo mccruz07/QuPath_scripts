@@ -1,0 +1,70 @@
+{
+  "review_date": "2026-11-16",
+  "review": "Comparação estática; sem execução no QuPath; scripts mantidos sem alterações",
+  "files": [
+    {
+      "original_name": "audrei_pol.groovy",
+      "sha256": "e09c8acf8be56a6da92ec154d81be97c2132e6f1d1ee084725a210c0725efc22",
+      "bytes": 4946,
+      "included": true,
+      "destination": "scripts/audrei_pol.groovy",
+      "decision": "mantido"
+    },
+    {
+      "original_name": "complete_fast.groovy",
+      "sha256": "380d1a98571b744bb748ce18accd96eeee573faa774c58c915134464ade5bf27",
+      "bytes": 35733,
+      "included": true,
+      "destination": "scripts/complete_fast.groovy",
+      "decision": "mantido"
+    },
+    {
+      "original_name": "complete_normal.groovy",
+      "sha256": "919b9dff371c1680b5cd4d58fae4dd0a65bbf8a73ed675bf3a2b523261a81ad5",
+      "bytes": 35634,
+      "included": false,
+      "destination": null,
+      "decision": "omitido por sobreposição funcional; ver SELECAO.md"
+    },
+    {
+      "original_name": "cortex_glia_gr_analysis.groovy",
+      "sha256": "926a8565d0f9a5310c2c3eda5714c66d7a13977d768c28fac367ff64b7c408ef",
+      "bytes": 27542,
+      "included": false,
+      "destination": null,
+      "decision": "omitido por sobreposição funcional; ver SELECAO.md"
+    },
+    {
+      "original_name": "cortex_glia_gr_fast.groovy",
+      "sha256": "2a81e4eb961e4dbecd81f7b2e3551fd6af3e787d2644a54b8847682a82cf6e23",
+      "bytes": 23460,
+      "included": false,
+      "destination": null,
+      "decision": "omitido por sobreposição funcional; ver SELECAO.md"
+    },
+    {
+      "original_name": "Cortex_Microglia_GR.groovy",
+      "sha256": "a3ae7366815ef79f09cbb6c4049015b3b8e6c6885f7eef8053135978329a7805",
+      "bytes": 29716,
+      "included": true,
+      "destination": "scripts/variants/Cortex_Microglia_GR.groovy",
+      "decision": "mantido como variante sem limite máximo GR"
+    },
+    {
+      "original_name": "draw_regions.groovy",
+      "sha256": "801d4003aea9a16d5e4cedc7fc7e27278bfc9bcfe7d85cccb705a8f119bf1e17",
+      "bytes": 11214,
+      "included": true,
+      "destination": "scripts/draw_regions.groovy",
+      "decision": "mantido"
+    },
+    {
+      "original_name": "Sholl_Microglia_v6.groovy",
+      "sha256": "47a5178b9a676e2b123f23cb88a29a12d717ee3f67e253974d0d07a2fd25c73b",
+      "bytes": 15392,
+      "included": true,
+      "destination": "scripts/Sholl_Microglia_v6.groovy",
+      "decision": "mantido"
+    }
+  ]
+}
