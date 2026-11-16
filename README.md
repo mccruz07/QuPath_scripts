@@ -2,8 +2,6 @@
 
 Scripts Groovy para quantificação de colágeno, análise de microglia/GR, transferência de regiões corticais e análise piloto de Sholl.
 
-**Repositório de destino:** [mccruz07/QuPath_scripts](https://github.com/mccruz07/QuPath_scripts).
-
 ## Estado desta coleção
 
 Coleção organizada a partir de oito scripts: **quatro scripts principais e uma variante científica preservada**. Três implementações sobrepostas foram retiradas do pacote; o motivo e as diferenças estão em [seleção dos scripts](docs/SELECAO.md). Os cinco arquivos incluídos são cópias integrais dos originais, sem correções de código.
@@ -81,8 +79,3 @@ QuPath_scripts/
 
 O [dicionário de dados](docs/DICIONARIO_DADOS.md) lista as colunas exportadas. O [manifesto](docs/MANIFESTO.json) registra os hashes dos oito arquivos recebidos e sua destinação.
 
-## Autoria, citação e licença
-
-Os arquivos recebidos não fornecem uma atribuição formal de autoria e licença suficiente para definir esses campos nesta entrega. Não foi criada uma licença em nome do titular. Ao preparar uma versão pública, confirme a autoria e escolha a licença desejada.
-
-Para reprodutibilidade, registre o script, commit do repositório, versão do QuPath, classificadores e seus parâmetros, calibração, critérios de exclusão e versão dos dados. Não há DOI ou versão de lançamento fornecidos.
