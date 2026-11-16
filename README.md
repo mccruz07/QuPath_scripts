@@ -2,8 +2,6 @@
 
 Acervo de scripts Groovy para consulta e reutilização em análise de imagens no QuPath. Cada guia explica o que a rotina faz, quais recursos utiliza, seus parâmetros e o que gera.
 
-**Repositório:** [mccruz07/QuPath_scripts](https://github.com/mccruz07/QuPath_scripts).
-
 O pacote contém **39 scripts**: cinco da primeira coleção e 34 arquivos distintos da nova inclusão. Os 35 nomes novos recebidos estão mapeados na [tabela de nomes antigos e novos](docs/NOMES_DOS_SCRIPTS.md); uma duplicata exata de exportação de tiles foi consolidada. As diferenças de modelos, limiares e métodos foram preservadas em variantes com nomes descritivos.
 
 ## Como consultar e usar
@@ -128,9 +126,3 @@ QuPath_scripts/
     ├── DICIONARIO_DADOS.md
     └── MANIFESTO.json
 ```
-
-## Autoria e licença
-
-Os comentários e atribuições dos códigos foram preservados. Alguns arquivos derivados de templates Cellpose citam Olivier Burri; isso não atribui automaticamente todas as adaptações ao autor do template. Os nomes de pessoas nos arquivos antigos foram mantidos na tabela de correspondência como contexto, sem inferir autoria.
-
-Uma licença não foi definida nesta organização do acervo. Registre a autoria e a licença desejada antes de conceder direitos de uso e redistribuição. Para localizar uma versão usada anteriormente, o manifesto relaciona nomes originais, destinos e hashes dos arquivos.
